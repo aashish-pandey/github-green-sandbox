@@ -6,13 +6,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>GitHub Green Sandbox</h1>
-  <input type="date" id="start-date"> to
-  <input type="date" id="end-date">
-  <button onclick="generateGrid()">Generate</button>
-  <div id="calendar-grid"></div>
-  <h3>Selected Dates:</h3>
-  <ul id="selected-dates"></ul>
+
+  <div class="container">
+    <h1>🟩 GitHub Green Sandbox</h1>
+
+    <div class="controls">
+      <label>
+        Start Date:
+        <input type="date" id="start-date" value="2024-10-01">
+      </label>
+      <label>
+        End Date:
+        <input type="date" id="end-date" value="2025-05-31">
+      </label>
+      <button id="generate">Generate Grid</button>
+    </div>
+
+    <div class="grid" id="calendar-grid"></div>
+
+    <h2>📆 Selected Dates</h2>
+    <ul id="selected-dates"></ul>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
